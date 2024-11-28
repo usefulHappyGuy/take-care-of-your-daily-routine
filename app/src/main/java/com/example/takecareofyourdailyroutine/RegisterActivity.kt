@@ -39,16 +39,9 @@ class RegisterActivity : AppCompatActivity() {
             // Walidacja danych
             if (validateInputs(name, email, password)) {
                 // Rejestracja użytkownika w Firebase
-
                 auth.createUserWithEmailAndPassword(email, password)
                     .addOnCompleteListener(this) { task ->
                         if (task.isSuccessful) {
-
-                            val user = FirebaseAuth.getInstance().currentUser
-                            if(user != null) {
-                                saveUserToFirestore(email, name, password)// Zapisz dane użytkownika
-                            }
-
                             Toast.makeText(this, "Rejestracja udana!", Toast.LENGTH_SHORT).show()
                             // Po udanej rejestracji, przejście do MainActivity
                             val intent = Intent(this, MainActivity::class.java)

@@ -17,17 +17,13 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-         //Sprawdzenie czy użytkownik jest już zalogowany
-        /*
+        /* Sprawdzenie, czy użytkownik jest już zalogowany
         val currentUser = auth.currentUser
         if (currentUser != null) {
             // Użytkownik jest zalogowany, przejdź od razu do głównej aktywności
             navigateToDashboard()
-        } else {
-            Toast.makeText(this, "Nieudana próba logowania", Toast.LENGTH_SHORT).show()
         }
         */
-
         binding.btnLogin.setOnClickListener {
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
