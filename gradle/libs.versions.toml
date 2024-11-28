@@ -13,6 +13,11 @@ constraintlayout = "2.1.4"
  lifecycleRuntimeKtx = "2.8.6"
  activityCompose = "1.9.3"
  composeBom = "2024.04.01"
+<<<<<<< HEAD
+ firebaseStorage = "21.0.1"
+ firebaseFirestore = "25.1.1"
+=======
+>>>>>>> cdd38ba75cf8f85a42354e355c1e3f806dfb0434
 
  [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -34,6 +39,11 @@ androidx-constraintlayout = { group = "androidx.constraintlayout", name = "const
  androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
  androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
  androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+<<<<<<< HEAD
+ firebase-storage = { group = "com.google.firebase", name = "firebase-storage", version.ref = "firebaseStorage" }
+ firebase-firestore = { group = "com.google.firebase", name = "firebase-firestore", version.ref = "firebaseFirestore" }
+=======
+>>>>>>> cdd38ba75cf8f85a42354e355c1e3f806dfb0434
 
  [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

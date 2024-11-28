@@ -37,7 +37,7 @@ class LoginActivity : AppCompatActivity() {
                 if (task.isSuccessful) {
                     // Jeśli logowanie zakończone sukcesem, przejście do głównej aktywności
                     Toast.makeText(this, "Logowanie udane", Toast.LENGTH_SHORT).show()
-                    val intent = Intent(this, MainActivity::class.java)
+                    val intent = Intent(this, DashboardActivity::class.java)
                     startActivity(intent)
                     finish()  // Zakończenie tej aktywności, żeby użytkownik nie mógł wrócić
                 } else {
