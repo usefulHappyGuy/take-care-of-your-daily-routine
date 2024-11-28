@@ -1,0 +1,115 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Główna zawartość aplikacji, która będzie przewijalna -->
+    <ScrollView
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottom_bar">
+
+        <!-- Treść dashboardu, która może się przewijać -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Przykładowa treść dashboardu -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Witaj w aplikacji!"
+                android:textSize="24sp"
+                android:padding="16dp" />
+
+            <!-- Inne informacje -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Inne informacje"
+                android:textSize="18sp"
+                android:padding="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Pasek dolny z przyciskami -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#3A7D44"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Przycisk Home -->
+        <ImageButton
+            android:id="@+id/btnHome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/baseline_home_24"
+            android:contentDescription ="Strona główna"
+            android:background="?android:attr/selectableItemBackground"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/separator1" />
+
+        <!-- Separator 1 -->
+        <View
+            android:id="@+id/separator1"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btnHome"
+            app:layout_constraintEnd_toStartOf="@id/btnTask" />
+
+        <!-- Przycisk Task -->
+        <ImageButton
+            android:id="@+id/btnTask"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/baseline_task_24"
+            android:contentDescription="Lista zadań"
+            android:background="?android:attr/selectableItemBackground"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/separator1"
+            app:layout_constraintEnd_toStartOf="@id/separator2" />
+
+        <!-- Separator 2 -->
+        <View
+            android:id="@+id/separator2"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btnTask"
+            app:layout_constraintEnd_toStartOf="@id/btnSettings" />
+
+        <!-- Przycisk Settings -->
+        <ImageButton
+            android:id="@+id/btnSettings"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/baseline_settings_24"
+            android:contentDescription="Ustawienia"
+            android:background="?android:attr/selectableItemBackground"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/separator2"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
