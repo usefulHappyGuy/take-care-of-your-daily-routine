@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Tytuł formularza -->
+
+    <!-- Pole do wpisania imienia -->
+
+    <TextView
+        android:id="@+id/registerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Rejestracja"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Imię"
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/rounded_edittext"/>
+
+    <!-- Pole do wpisania adresu e-mail -->
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Adres e-mail"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/rounded_edittext"/>
+
+    <!-- Pole do wpisania hasła -->
+
+    <!-- Przycisk rejestracji -->
+
+    <!-- Link do ekranu logowania -->
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Hasło"
+        android:inputType="textPassword"
+        android:padding="12dp" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#3A7D44"
+        android:text="Zarejestruj"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/LoginLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masz już konto? Zaloguj się"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:focusable="true"/>
+
+
+</LinearLayout>

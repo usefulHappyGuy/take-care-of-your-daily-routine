@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Take care of your daily routine</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_registation">Registation</string>
+</resources>

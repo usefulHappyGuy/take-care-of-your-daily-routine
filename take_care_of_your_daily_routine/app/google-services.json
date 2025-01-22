@@ -1,0 +1,29 @@
+{
+    "project_info": {
+        "project_number": "428509331755",
+        "project_id": "baza-eb9ff",
+        "storage_bucket": "baza-eb9ff.firebasestorage.app"
+    },
+    "client": [
+        {
+            "client_info": {
+                "mobilesdk_app_id": "1:428509331755:android:9b1b6c3a5bd4cc624f056e",
+                "android_client_info": {
+                    "package_name": "com.example.takecareofyourdailyroutine"
+                }
+            },
+            "oauth_client": [],
+            "api_key": [
+                {
+                    "current_key": "AIzaSyAGLzjlxyjcaqirrre9wvg-RvP7fHS5hDw"
+                }
+            ],
+            "services": {
+                "appinvite_service": {
+                    "other_platform_oauth_client": []
+                }
+            }
+        }
+    ],
+    "configuration_version": "1"
+}

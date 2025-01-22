@@ -1,0 +1,30 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etTaskTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Tytuł zadania"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:minHeight="48dp" />  <!-- Minimalna wysokość dla lepszej dostępności -->
+
+    <EditText
+        android:id="@+id/etTaskDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Opis zadania"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etTaskTitle"
+        android:minHeight="48dp" />  <!-- Minimalna wysokość dla lepszej dostępności -->
+</androidx.constraintlayout.widget.ConstraintLayout>
